@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="dropdown">Hola Maria
+  <div class="dropdown">Hola Marilu
 	<button onclick="drop()" class="dropbtn">&#9776;</button>
 	<div id="myDropdown" class="dropdown-content">
 		<a href="#">Perfil</a>
@@ -18,6 +18,7 @@
   <div id = "imagen">
     <img src="assets/images/logo_lab.svg" alt="">
   </div>
+  <!-- div para mostrar la descripcion lorem-->
   <div id = "descripcion">
     <h3>¿Qué es Laboratoria?</h3>
     <p>
@@ -27,12 +28,85 @@
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <h4>Temas</h4>
-    <button onclick="myFunctionsprint1()" id = "sprint1" type="button" name="button">Sprint1</button>
-    <button onclick="myFunctionsprint1()" id = "sprint2" type="button" name="button">Sprint2</button>
-    <button onclick="myFunctionsprint1()" id = "sprint3" type="button" name="button">Sprint3</button>
+    <button onclick="myFunctionsprint1('infoSprint1')" id = "sprint1" type="button" name="button">Sprint1</button>
+    <button onclick="myFunctionsprint2('infoSprint2')" id = "sprint2" type="button" name="button">Sprint2</button>
+    <button onclick="myFunctionsprint3('infoSprint3')" id = "sprint3" type="button" name="button">Sprint3</button>
   </div>
-  <div id = "informacion">
-    
+<!-- div para mostrar la informacion de sprint 1-->
+  <div id = "infoSprint1">
+    <h3>Sprint 1: Introducción a Javascript</h3>
+    <ol>
+      <li>Fundamentos de Programacion</li>
+      <li>Funciones</li>
+      <li>Arreglos </li>
+      <li>Objetos</li>
+    </ol>
+    <hr style="color: #0056b2;"
+    <h3>QUIZ</h3>
+    <form action="">
+      <form class="" action="index.html" method="post">
+        <h4>¿Existen dos tipos de funciones?</h4>
+        <input type="radio" name="respuesta" value="1" checked>expresiones y declaraciones <br>
+        <input type="radio" name="respuesta" value="2" checked>expliitas y declaradas <br>
+        <input type="radio" name="respuesta" value="3" checked> expresines y derivadas
+
+      </form>
+      <form class="" action="index.html" method="post">
+        <h4>Elija una propiedad de los arreglos</h4>
+        <input type="radio" name="respuesta" value="4" checked>pop <br>
+        <input type="radio" name="respuesta" value="5" checked>add<br>
+        <input type="radio" name="respuesta" value="6" checked> clear
+      </form>
+      <form class="" action="index.html" method="post">
+        <h4>Un objeto tiene ________ y _________</h4>
+        <input type="radio" name="respuesta" value="4" checked>partes y letras<br>
+        <input type="radio" name="respuesta" value="5" checked>propiedades y valores<br>
+        <input type="radio" name="respuesta" value="6" checked> partes y validaciones
+      </form>
+      <button type="button" name="button">Enviar</button>
+    </form>
+    <div id = "correccion1"></div>
+
+  </div>
+<!-- div para mostrar la informacion de sprint 2-->
+  <div id = "infoSprint2">
+    <h3>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h3>
+    <ol>
+      <li>Introducción al desarrollo web</li>
+      <li>HTML y JavaScript en el navegador</li>
+      <li>Manejo de comandos básicos de git en la terminal </li>
+      <li>Pruebas Unitarias</li>
+      <li>Git - Branching Model</li>
+    </ol>
+    <hr style="color: #0056b2;"
+    <h3>QUIZ</h3>
+    <form action="">
+      <form class="" action="index.html" method="post">
+
+        <h4>¿Cual es el contenido para iniciar un repositorio desde la consola?</h4>
+        <input type="radio" name="respuesta" value="1" checked>git init <br>
+        <input type="radio" name="respuesta" value="2" checked>git add <br>
+        <input type="radio" name="respuesta" value="3" checked> git init add
+      </form>
+      <form class="" action="index.html" method="post">
+        <h4>¿Cual es la finalidad de hacer una prueba?</h4>
+        <input type="radio" name="respuesta" value="4" checked>comprobar que el codigo funciona correctamente <br>
+        <input type="radio" name="respuesta" value="5" checked>dale valores a los parametros de dichas funciones<br>
+        <input type="radio" name="respuesta" value="6" checked> no tiene ningun fin
+      </form>
+      <form class="" action="index.html" method="post">
+        <h4>¿Que siginifica DOM?</h4>
+        <input type="radio" name="respuesta" value="4" checked>Document Object Model <br>
+        <input type="radio" name="respuesta" value="5" checked>Dual object Model<br>
+        <input type="radio" name="respuesta" value="6" checked> Document object moon
+      </form>
+      <button type="button" name="button">Enviar</button>
+    </form>
+    <div id = "resultado2"></div>
+  </div>
+<!-- div para mostrar la informacion de sprint 3-->
+  <div id = "infoSprint3">
+    <p>No hay lecciones (Todavía)</p>
   </div>
   <script src = "assets/js/main.js"></script>
 </body>

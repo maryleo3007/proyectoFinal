@@ -40,3 +40,9 @@
 .show {
   display:block;
 }
+#infoSprint2{
+	display : none;
+}
+#infoSprint3{
+	display : none;
+}
